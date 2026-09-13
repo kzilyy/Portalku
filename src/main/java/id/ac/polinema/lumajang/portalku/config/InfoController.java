@@ -20,6 +20,9 @@ public class InfoController {
     @Value("${spring.profiles.active:default}")
     private String profilAktif;
 
+    @Value("${app.kunci-rahasia}")
+    private String kunciRahasia;
+
     @GetMapping
     public Map<String, Object> info() {
         Map<String, Object> hasil = new LinkedHashMap<>();
