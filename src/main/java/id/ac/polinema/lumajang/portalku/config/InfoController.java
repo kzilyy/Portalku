@@ -31,6 +31,7 @@ public class InfoController {
         hasil.put("profil", profilAktif);
         hasil.put("sambutan", app.getPesanSambutan());
         hasil.put("maksItem", app.getMaksItem());
+        hasil.put("kunciRahasia", kunciRahasia);
         return hasil;
     }
 }
